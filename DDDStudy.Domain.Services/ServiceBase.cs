@@ -4,10 +4,15 @@ using System.Linq.Expressions;
 
 namespace DDDStudy.Domain.Services
 {
-    public class ServiceBase<TEntity>(IRepositoryBase<TEntity> repository) : IServiceBase<TEntity>
+    public class ServiceBase<TEntity> : IServiceBase<TEntity>
         where TEntity : class
     {
-        private readonly IRepositoryBase<TEntity> _repository = repository;
+        private readonly IRepositoryBase<TEntity> _repository;
+
+        public ServiceBase(IRepositoryBase<TEntity> repository)
+        {
+            _repository = repository;
+        }
 
         public void Add(TEntity entity) => _repository.Add(entity);
 

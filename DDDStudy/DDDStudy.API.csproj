@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\DDDStudy.Infra.CrossCutting.IOC\DDDStudy.Infra.CrossCutting.IOC.csproj" />
+    <ProjectReference Include="..\DDStudy.Application\DDStudy.Application.csproj" />
   </ItemGroup>
 
 </Project>

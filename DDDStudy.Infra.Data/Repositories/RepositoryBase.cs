@@ -26,6 +26,8 @@ namespace DDDStudy.Infra.Data.Repositories
         }
 
         public IEnumerable<TEntity> GetAll() => _sqlContext.Set<TEntity>().Take(100).ToList();
+
+        //TODO - NullException
         public TEntity GetById(Guid id) => _sqlContext.Set<TEntity>().Find(id);
 
         public void Remove(TEntity entity)

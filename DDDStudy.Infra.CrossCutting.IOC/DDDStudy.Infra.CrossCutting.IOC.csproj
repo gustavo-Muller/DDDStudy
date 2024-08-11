@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DDDStudy.Domain.Core\DDDStudy.Domain.Core.csproj" />
+    <ProjectReference Include="..\DDDStudy.Domain.Services\DDDStudy.Domain.Services.csproj" />
+    <ProjectReference Include="..\DDDStudy.Infra.Data\DDDStudy.Infra.Data.csproj" />
+    <ProjectReference Include="..\DDStudy.Application\DDStudy.Application.csproj" />
+  </ItemGroup>
+
 </Project>
